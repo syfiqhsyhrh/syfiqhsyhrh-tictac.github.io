@@ -1,0 +1,77 @@
+body, html{
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1518554974948-eb46d88b056e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+h2{
+    height: 10%;
+
+}
+h3{
+    height: 5%;
+    font-family: "Comic Sans MS" ,Helvetica, sans-serif;
+    font-style: italic; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: blueviolet;
+}
+
+.grid-container {
+    /* position: absolute; */
+    padding: 20px;
+    z-index: 1; 
+}
+  
+.grid-row {
+    margin-bottom: 5px; 
+}
+
+.grid-row:last-child {
+    margin-bottom: 0; }
+.grid-row:after {
+    content: "";
+    display: block;
+    clear: both; 
+}
+  
+.grid-cell {
+    width: 106.25px;
+    height: 106.25px;
+    margin-right: 5px;
+    float: left;
+    border-radius: 3px;
+    background: turquoise;
+    border-radius: 5px;
+    font-size: 80px;
+}
+
+.grid-cell:last-child {
+ margin-right: 0; 
+}
+
+#win{
+    color: white;
+}
+
+.grid-cell:hover{
+cursor: pointer;
+}
+#my-button{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50%;
+    font-style: italic;
+
+}
+.rotate{
+    -moz-animation: spinHorizontal .8s infinite linear;
+    -o-animation: spinHorizontal .8s infinite linear;    
+    -webkit-animation: spinHorizontal .8s infinite linear;
+    animation: spinHorizontal .8s infinite linear;
+}
+@keyframes spinHorizontal {
+    0% { transform: rotateY(0deg); }
+    100% { transform: rotateY(360deg); }
+}
